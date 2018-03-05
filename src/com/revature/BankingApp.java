@@ -28,6 +28,7 @@ public class BankingApp {
 				        selectionValid = 1;
 				        break;
 				case 2: creds.register();
+				        System.out.println("Now please login\n");
 				        selectionValid = 1;
 				        break;
 				default: System.out.println("invalid selection");
