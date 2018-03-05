@@ -10,24 +10,30 @@ public class BankingApp {
 	}
 	
 	public static void initialize() {
-		Scanner reader = new Scanner(System.in);
-		String username, password;
+		int selection, selectionValid;
 		Credentials creds = new Credentials();
-		
-		System.out.println("Welcome to the Bank!\n");
-		System.out.println("Please register or enter your credentials");
-		System.out.print("Username: ");
-		username = reader.nextLine();
-		
-		System.out.print("Password: ");
-		password = reader.nextLine();
-		
-		creds.register("David", "password");
-		if(creds.validate(username, password))
-			System.out.println("Welcome " + username + "!");
-		else
-			System.out.println("invalid login");
-		
+		Scanner reader = new Scanner(System.in);
+		do {
+			System.out.println("Welcome to the Bank!\n");
+			System.out.println("Please register or enter your credentials");
+			System.out.println("\n1. Login\n2. Register");
+			
+			selection = reader.nextInt();
+			
+			do {
+				switch(selection) {
+				case 0: selectionValid = 1;
+				        break;
+				case 1: creds.validate();
+				        selectionValid = 1;
+				        break;
+				case 2: creds.register();
+				        selectionValid = 1;
+				        break;
+				default: System.out.println("invalid selection");
+				         selectionValid = 0;
+				}
+			} while(selectionValid == 0);
+		} while(selection != 0);
 	}
-
 }
