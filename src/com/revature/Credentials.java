@@ -107,6 +107,7 @@ public class Credentials {
 		String u, p;
 		int validLogin = 0;
 		Scanner reader = new Scanner(System.in);
+		BankAccount account;
 
 		System.out.print("Username: ");
 		u = reader.nextLine();
@@ -116,9 +117,9 @@ public class Credentials {
 		
 		for(int i = 0; i < this.usernames.size(); i++) {
 			if(usernames.get(i).equals(u) && passwords.get(i).equals(p)) {
-				System.out.println("Welcome " + u + "!\n");
+				System.out.println("\nWelcome " + u + "!\n");
 				validLogin = 1;
-				
+				account = new BankAccount(u,p);
 			}
 		}
 		
