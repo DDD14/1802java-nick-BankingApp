@@ -19,7 +19,7 @@ public class Credentials {
 	private LoggingUtil log = new LoggingUtil();
 	
 	public Credentials() {
-		try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream("usernames.dat"))){
+	/*	try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream("usernames.dat"))){
 			
 			usernames = (ArrayList<String>) ois.readObject();
 			
@@ -48,7 +48,7 @@ public class Credentials {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		*/
 	}
 	
 	public void register() {
