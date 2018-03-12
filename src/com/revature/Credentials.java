@@ -16,6 +16,8 @@ public class Credentials {
 	private static List<String> usernames = new ArrayList<>();
 	private static List<String> passwords = new ArrayList<>();
 	
+	private LoggingUtil log = new LoggingUtil();
+	
 	public Credentials() {
 		try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream("usernames.dat"))){
 			
@@ -54,8 +56,7 @@ public class Credentials {
 		int validInput;
 		String u, p;
 		
-		System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-		System.out.println("Please fill out the following fields:");
+		System.out.println("\nPlease fill out the following fields:");
 		do {
 			System.out.print("Username: ");
 			u = reader.nextLine();
@@ -101,6 +102,7 @@ public class Credentials {
 		}
 		
 		System.out.println("\nSuccessfully Registered!\n");
+		log.logInfo("Successfully registered " + u);
 	}
 	
 	public void validate() {
@@ -117,14 +119,17 @@ public class Credentials {
 		
 		for(int i = 0; i < this.usernames.size(); i++) {
 			if(usernames.get(i).equals(u) && passwords.get(i).equals(p)) {
-				System.out.println("\nWelcome " + u + "!\n");
 				validLogin = 1;
+				i = usernames.size();
+				log.logInfo("Successfully logged user " + u + " in.");
 				account = new BankAccount(u,p);
 			}
 		}
 		
-		if(validLogin != 1)
+		if(validLogin != 1) {
 			System.out.println("invalid login\n");
+			log.logWarn("Failed login attempt for username: " + u);
+		}
 		
 	}
 

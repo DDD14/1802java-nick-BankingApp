@@ -1,0 +1,471 @@
+2018-03-07 22:32:52 INFO  root;21 - Successfully logged userDavid in.
+2018-03-07 22:32:52 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:32:52 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 22:33:04 DEBUG root;25 - serialize() method called
+2018-03-07 22:36:39 INFO  root;21 - Successfully logged user David in.
+2018-03-07 22:36:39 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:38:22 INFO  root;21 - Successfully registered David
+2018-03-07 22:38:35 INFO  root;21 - Successfully logged user David in.
+2018-03-07 22:38:35 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:38:35 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 22:38:45 DEBUG root;25 - serialize() method called
+2018-03-07 22:40:59 WARN  root;17 - Failed login attempt for username: David
+2018-03-07 22:41:12 INFO  root;21 - Successfully registered David
+2018-03-07 22:41:21 INFO  root;21 - Successfully logged user David in.
+2018-03-07 22:41:21 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:41:21 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 22:41:28 DEBUG root;25 - serialize() method called
+2018-03-07 22:43:30 INFO  root;21 - Successfully registered David
+2018-03-07 22:43:36 INFO  root;21 - Successfully logged user David in.
+2018-03-07 22:43:36 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:43:36 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 22:44:30 DEBUG root;25 - serialize() method called
+2018-03-07 22:46:38 INFO  root;21 - Successfully registered David
+2018-03-07 22:46:45 INFO  root;21 - Successfully logged user David in.
+2018-03-07 22:46:45 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:46:45 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 22:47:18 DEBUG root;25 - serialize() method called
+2018-03-07 22:50:09 INFO  root;21 - Successfully registered David
+2018-03-07 22:50:14 INFO  root;21 - Successfully logged user David in.
+2018-03-07 22:50:14 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:50:14 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 22:50:21 DEBUG root;25 - serialize() method called
+2018-03-07 22:51:45 INFO  root;21 - Successfully logged user David in.
+2018-03-07 22:51:45 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:52:05 INFO  root;21 - Successfully registered joe
+2018-03-07 22:52:09 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 22:52:09 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:52:09 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 22:52:40 DEBUG root;25 - serialize() method called
+2018-03-07 22:52:56 INFO  root;21 - Successfully logged user David in.
+2018-03-07 22:52:56 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:54:00 INFO  root;21 - Successfully logged user David in.
+2018-03-07 22:54:00 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:56:46 INFO  root;21 - Successfully registered David
+2018-03-07 22:56:52 INFO  root;21 - Successfully logged user David in.
+2018-03-07 22:56:52 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:56:52 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 22:56:57 DEBUG root;25 - serialize() method called
+2018-03-07 22:57:24 INFO  root;21 - Successfully registered joe
+2018-03-07 22:57:29 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 22:57:29 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:57:29 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 22:58:13 DEBUG root;25 - serialize() method called
+2018-03-07 22:58:34 INFO  root;21 - Successfully registered Sue
+2018-03-07 22:58:44 INFO  root;21 - Successfully logged user Sue in.
+2018-03-07 22:58:44 DEBUG root;25 - deSerialize() method called
+2018-03-07 22:58:44 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 22:59:02 DEBUG root;25 - serialize() method called
+2018-03-07 23:00:37 INFO  root;21 - Successfully registered Joey
+2018-03-07 23:00:43 INFO  root;21 - Successfully logged user Joey in.
+2018-03-07 23:00:43 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:02:49 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:03:29 INFO  root;21 - Successfully logged user Joey in.
+2018-03-07 23:03:29 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:10:28 INFO  root;21 - Successfully registered David
+2018-03-07 23:10:33 INFO  root;21 - Successfully logged user David in.
+2018-03-07 23:10:33 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:11:08 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:11:29 DEBUG root;25 - serialize() method called
+2018-03-07 23:12:26 INFO  root;21 - Successfully registered joe
+2018-03-07 23:12:43 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 23:12:43 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:16:20 INFO  root;21 - Successfully registered David
+2018-03-07 23:16:25 INFO  root;21 - Successfully logged user David in.
+2018-03-07 23:16:25 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:16:44 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:19:10 DEBUG root;25 - serialize() method called
+2018-03-07 23:20:40 INFO  root;21 - Successfully registered joe
+2018-03-07 23:20:56 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 23:20:56 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:23:07 INFO  root;21 - Successfully registered David
+2018-03-07 23:23:12 INFO  root;21 - Successfully logged user David in.
+2018-03-07 23:23:12 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:23:18 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:23:48 INFO  root;21 - Successfully registered joe
+2018-03-07 23:23:59 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 23:23:59 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:25:20 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:27:01 INFO  root;21 - Successfully registered David
+2018-03-07 23:27:04 INFO  root;21 - Successfully logged user David in.
+2018-03-07 23:27:04 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:27:13 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:27:33 INFO  root;21 - Successfully registered joe
+2018-03-07 23:27:48 WARN  root;17 - Failed login attempt for username: joe big
+2018-03-07 23:27:58 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 23:27:58 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:30:04 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 23:30:04 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:30:23 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:31:29 INFO  root;21 - Successfully registered David
+2018-03-07 23:31:34 INFO  root;21 - Successfully logged user David in.
+2018-03-07 23:31:34 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:31:34 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:31:41 INFO  root;21 - Successfully registered joe
+2018-03-07 23:31:44 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 23:31:44 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:31:44 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:34:23 INFO  root;21 - Successfully registered David
+2018-03-07 23:34:28 INFO  root;21 - Successfully logged user David in.
+2018-03-07 23:34:28 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:34:28 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:34:34 WARN  root;17 - Failed login attempt for username: joe
+2018-03-07 23:34:38 WARN  root;17 - Failed login attempt for username: joe
+2018-03-07 23:34:44 INFO  root;21 - Successfully registered joe
+2018-03-07 23:34:48 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 23:34:48 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:34:48 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:40:25 INFO  root;21 - Successfully registered David
+2018-03-07 23:40:30 INFO  root;21 - Successfully logged user David in.
+2018-03-07 23:40:30 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:40:31 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:40:38 DEBUG root;25 - serialize() method called
+2018-03-07 23:40:47 INFO  root;21 - Successfully registered joe
+2018-03-07 23:41:05 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 23:41:05 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:41:05 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:41:56 DEBUG root;25 - serialize() method called
+2018-03-07 23:45:44 INFO  root;21 - Successfully registered David
+2018-03-07 23:45:47 INFO  root;21 - Successfully logged user David in.
+2018-03-07 23:45:47 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:45:47 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:45:52 DEBUG root;25 - serialize() method called
+2018-03-07 23:45:58 INFO  root;21 - Successfully registered joe
+2018-03-07 23:46:01 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 23:46:01 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:46:01 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:46:17 DEBUG root;25 - serialize() method called
+2018-03-07 23:47:21 INFO  root;21 - Successfully registered David
+2018-03-07 23:47:25 INFO  root;21 - Successfully logged user David in.
+2018-03-07 23:47:25 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:47:52 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:48:06 DEBUG root;25 - serialize() method called
+2018-03-07 23:48:23 INFO  root;21 - Successfully registered joe
+2018-03-07 23:48:31 INFO  root;21 - Successfully logged user joe in.
+2018-03-07 23:48:31 DEBUG root;25 - deSerialize() method called
+2018-03-07 23:49:13 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-07 23:49:21 DEBUG root;25 - serialize() method called
+2018-03-08 00:00:27 INFO  root;21 - Successfully registered David
+2018-03-08 00:00:31 INFO  root;21 - Successfully logged user David in.
+2018-03-08 00:00:31 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:00:31 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 00:00:49 DEBUG root;25 - serialize() method called
+2018-03-08 00:00:57 INFO  root;21 - Successfully registered joe
+2018-03-08 00:01:00 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 00:01:00 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:01:00 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 00:01:40 DEBUG root;25 - serialize() method called
+2018-03-08 00:01:51 INFO  root;21 - Successfully registered sue
+2018-03-08 00:01:54 INFO  root;21 - Successfully logged user sue in.
+2018-03-08 00:01:54 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:01:54 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 00:01:56 DEBUG root;25 - serialize() method called
+2018-03-08 00:02:02 INFO  root;21 - Successfully logged user sue in.
+2018-03-08 00:02:02 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:02:08 INFO  root;21 - Successfully logged user David in.
+2018-03-08 00:02:08 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:15:56 INFO  root;21 - Successfully logged user David in.
+2018-03-08 00:15:56 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:16:19 INFO  root;21 - Successfully logged user David in.
+2018-03-08 00:16:19 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:16:47 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 00:16:47 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:17:07 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 00:17:07 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:21:30 INFO  root;21 - Successfully logged user David in.
+2018-03-08 00:21:30 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:21:34 DEBUG root;25 - serialize() method called
+2018-03-08 00:21:38 DEBUG root;25 - serialize() method called
+2018-03-08 00:21:49 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 00:21:49 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:25:43 INFO  root;21 - Successfully logged user David in.
+2018-03-08 00:25:43 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:25:49 DEBUG root;25 - serialize() method called
+2018-03-08 00:26:02 DEBUG root;25 - serialize() method called
+2018-03-08 00:30:21 INFO  root;21 - Successfully registered hack
+2018-03-08 00:30:23 INFO  root;21 - Successfully logged user hack in.
+2018-03-08 00:30:23 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:30:23 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 00:31:47 INFO  root;21 - Successfully logged user hack in.
+2018-03-08 00:31:47 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:31:47 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 00:32:44 INFO  root;21 - Successfully logged user hack in.
+2018-03-08 00:32:44 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:32:57 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 00:34:45 INFO  root;21 - Successfully logged user hack in.
+2018-03-08 00:34:45 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:34:45 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 00:34:53 DEBUG root;25 - serialize() method called
+2018-03-08 00:37:16 INFO  root;21 - Successfully logged user hack in.
+2018-03-08 00:37:16 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:37:16 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 00:37:21 DEBUG root;25 - serialize() method called
+2018-03-08 00:37:32 INFO  root;21 - Successfully logged user hack in.
+2018-03-08 00:37:32 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:37:32 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 00:37:38 DEBUG root;25 - serialize() method called
+2018-03-08 00:43:51 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 00:43:51 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:46:02 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 00:46:02 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:46:05 DEBUG root;25 - serialize() method called
+2018-03-08 00:46:10 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 00:46:10 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:46:13 DEBUG root;25 - serialize() method called
+2018-03-08 00:48:01 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 00:48:01 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:48:07 DEBUG root;25 - serialize() method called
+2018-03-08 00:48:54 WARN  root;17 - Failed login attempt for username: jo
+2018-03-08 00:48:57 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 00:48:57 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:49:02 DEBUG root;25 - serialize() method called
+2018-03-08 00:49:10 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 00:49:10 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:49:21 DEBUG root;25 - serialize() method called
+2018-03-08 00:50:40 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 00:50:40 DEBUG root;25 - deSerialize() method called
+2018-03-08 00:50:43 DEBUG root;25 - serialize() method called
+2018-03-08 00:50:54 DEBUG root;25 - serialize() method called
+2018-03-08 00:50:58 DEBUG root;25 - serialize() method called
+2018-03-08 09:00:32 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:00:32 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:00:38 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 09:02:48 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:02:48 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:02:52 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 09:04:43 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:04:43 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:06:37 INFO  root;21 - Successfully registered David
+2018-03-08 09:06:42 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:06:42 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:06:42 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 09:06:50 DEBUG root;25 - serialize() method called
+2018-03-08 09:07:05 INFO  root;21 - Successfully registered Charlie
+2018-03-08 09:07:30 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-08 09:07:30 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:07:30 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 09:07:43 DEBUG root;25 - serialize() method called
+2018-03-08 09:08:06 DEBUG root;25 - serialize() method called
+2018-03-08 09:08:11 INFO  root;21 - Successfully registered sue
+2018-03-08 09:08:14 INFO  root;21 - Successfully logged user sue in.
+2018-03-08 09:08:14 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:08:14 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 09:08:28 DEBUG root;25 - serialize() method called
+2018-03-08 09:08:45 INFO  root;21 - Successfully registered joey
+2018-03-08 09:08:51 INFO  root;21 - Successfully logged user joey in.
+2018-03-08 09:08:51 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:08:51 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 09:08:56 DEBUG root;25 - serialize() method called
+2018-03-08 09:09:03 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-08 09:09:03 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:09:06 DEBUG root;25 - serialize() method called
+2018-03-08 09:09:21 DEBUG root;25 - serialize() method called
+2018-03-08 09:09:28 DEBUG root;25 - serialize() method called
+2018-03-08 09:09:31 DEBUG root;25 - serialize() method called
+2018-03-08 09:09:45 WARN  root;17 - Failed login attempt for username: lkj
+2018-03-08 09:09:57 INFO  root;21 - Successfully registered Marty
+2018-03-08 09:10:02 INFO  root;21 - Successfully logged user Marty in.
+2018-03-08 09:10:02 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:10:02 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 09:10:30 DEBUG root;25 - serialize() method called
+2018-03-08 09:10:36 INFO  root;21 - Successfully logged user Marty in.
+2018-03-08 09:10:36 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:10:36 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 09:10:46 DEBUG root;25 - serialize() method called
+2018-03-08 09:10:51 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:10:51 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:11:05 DEBUG root;25 - serialize() method called
+2018-03-08 09:11:10 DEBUG root;25 - serialize() method called
+2018-03-08 09:11:27 DEBUG root;25 - serialize() method called
+2018-03-08 09:11:35 DEBUG root;25 - serialize() method called
+2018-03-08 09:11:50 DEBUG root;25 - serialize() method called
+2018-03-08 09:12:09 DEBUG root;25 - serialize() method called
+2018-03-08 09:12:39 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-08 09:12:39 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:12:40 DEBUG root;25 - serialize() method called
+2018-03-08 09:13:04 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:13:04 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:13:11 DEBUG root;25 - serialize() method called
+2018-03-08 09:13:32 DEBUG root;25 - serialize() method called
+2018-03-08 09:13:46 DEBUG root;25 - serialize() method called
+2018-03-08 09:13:55 DEBUG root;25 - serialize() method called
+2018-03-08 09:14:05 DEBUG root;25 - serialize() method called
+2018-03-08 09:14:08 DEBUG root;25 - serialize() method called
+2018-03-08 09:31:32 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:31:32 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:31:34 DEBUG root;25 - serialize() method called
+2018-03-08 09:32:07 DEBUG root;25 - serialize() method called
+2018-03-08 09:32:14 DEBUG root;25 - serialize() method called
+2018-03-08 09:32:21 DEBUG root;25 - serialize() method called
+2018-03-08 09:32:43 DEBUG root;25 - serialize() method called
+2018-03-08 09:32:47 DEBUG root;25 - serialize() method called
+2018-03-08 09:32:49 DEBUG root;25 - serialize() method called
+2018-03-08 09:33:00 DEBUG root;25 - serialize() method called
+2018-03-08 09:33:02 DEBUG root;25 - serialize() method called
+2018-03-08 09:33:05 DEBUG root;25 - serialize() method called
+2018-03-08 09:33:42 WARN  root;17 - Failed login attempt for username: David
+2018-03-08 09:33:46 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:33:46 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:33:49 DEBUG root;25 - serialize() method called
+2018-03-08 09:33:59 DEBUG root;25 - serialize() method called
+2018-03-08 09:34:58 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:34:58 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:35:06 DEBUG root;25 - serialize() method called
+2018-03-08 09:35:13 DEBUG root;25 - serialize() method called
+2018-03-08 09:35:23 DEBUG root;25 - serialize() method called
+2018-03-08 09:35:28 DEBUG root;25 - serialize() method called
+2018-03-08 09:35:31 DEBUG root;25 - serialize() method called
+2018-03-08 09:35:42 DEBUG root;25 - serialize() method called
+2018-03-08 09:35:46 DEBUG root;25 - serialize() method called
+2018-03-08 09:35:51 DEBUG root;25 - serialize() method called
+2018-03-08 09:35:57 DEBUG root;25 - serialize() method called
+2018-03-08 09:36:06 DEBUG root;25 - serialize() method called
+2018-03-08 09:36:08 DEBUG root;25 - serialize() method called
+2018-03-08 09:36:27 DEBUG root;25 - serialize() method called
+2018-03-08 09:36:34 DEBUG root;25 - serialize() method called
+2018-03-08 09:36:39 DEBUG root;25 - serialize() method called
+2018-03-08 09:38:01 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:38:01 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:39:32 DEBUG root;25 - serialize() method called
+2018-03-08 09:40:53 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:40:53 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:40:54 DEBUG root;25 - serialize() method called
+2018-03-08 09:43:18 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:43:18 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:43:20 DEBUG root;25 - serialize() method called
+2018-03-08 09:43:29 DEBUG root;25 - serialize() method called
+2018-03-08 09:43:32 DEBUG root;25 - serialize() method called
+2018-03-08 09:48:38 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:48:38 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:48:43 DEBUG root;25 - serialize() method called
+2018-03-08 09:48:58 DEBUG root;25 - serialize() method called
+2018-03-08 09:49:07 INFO  root;21 - Successfully logged user joey in.
+2018-03-08 09:49:07 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:49:13 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:49:13 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:49:18 DEBUG root;25 - serialize() method called
+2018-03-08 09:49:21 DEBUG root;25 - serialize() method called
+2018-03-08 09:49:30 INFO  root;21 - Successfully logged user joey in.
+2018-03-08 09:49:30 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:49:34 DEBUG root;25 - serialize() method called
+2018-03-08 09:49:39 DEBUG root;25 - serialize() method called
+2018-03-08 09:49:46 DEBUG root;25 - serialize() method called
+2018-03-08 09:49:50 DEBUG root;25 - serialize() method called
+2018-03-08 09:50:01 WARN  root;17 - Failed login attempt for username: Davie
+2018-03-08 09:50:05 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:50:05 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:50:07 DEBUG root;25 - serialize() method called
+2018-03-08 09:50:14 DEBUG root;25 - serialize() method called
+2018-03-08 09:50:18 DEBUG root;25 - serialize() method called
+2018-03-08 09:55:21 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:55:21 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:55:23 DEBUG root;25 - serialize() method called
+2018-03-08 09:55:46 INFO  root;21 - Successfully logged user joey in.
+2018-03-08 09:55:46 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:58:17 INFO  root;21 - Successfully logged user joey in.
+2018-03-08 09:58:17 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:58:23 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:58:23 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:58:37 INFO  root;21 - Successfully logged user joey in.
+2018-03-08 09:58:37 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:58:47 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:58:47 DEBUG root;25 - deSerialize() method called
+2018-03-08 09:58:51 DEBUG root;25 - serialize() method called
+2018-03-08 09:58:54 DEBUG root;25 - serialize() method called
+2018-03-08 09:59:58 INFO  root;21 - Successfully logged user David in.
+2018-03-08 09:59:58 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:00:01 DEBUG root;25 - serialize() method called
+2018-03-08 10:00:19 WARN  root;17 - Failed login attempt for username: joey
+2018-03-08 10:00:25 INFO  root;21 - Successfully logged user joey in.
+2018-03-08 10:00:25 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:00:32 INFO  root;21 - Successfully logged user David in.
+2018-03-08 10:00:32 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:00:38 DEBUG root;25 - serialize() method called
+2018-03-08 10:00:40 DEBUG root;25 - serialize() method called
+2018-03-08 10:00:57 INFO  root;21 - Successfully logged user joey in.
+2018-03-08 10:00:57 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:08:37 INFO  root;21 - Successfully logged user David in.
+2018-03-08 10:08:37 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:09:01 INFO  root;21 - Successfully logged user joey in.
+2018-03-08 10:09:01 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:09:29 INFO  root;21 - Successfully logged user David in.
+2018-03-08 10:09:29 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:09:33 DEBUG root;25 - serialize() method called
+2018-03-08 10:09:42 DEBUG root;25 - serialize() method called
+2018-03-08 10:09:48 DEBUG root;25 - serialize() method called
+2018-03-08 10:09:53 DEBUG root;25 - serialize() method called
+2018-03-08 10:09:55 DEBUG root;25 - serialize() method called
+2018-03-08 10:09:57 DEBUG root;25 - serialize() method called
+2018-03-08 10:10:00 DEBUG root;25 - serialize() method called
+2018-03-08 10:10:05 INFO  root;21 - Successfully logged user joey in.
+2018-03-08 10:10:05 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:10:11 INFO  root;21 - Successfully logged user David in.
+2018-03-08 10:10:11 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:10:15 DEBUG root;25 - serialize() method called
+2018-03-08 10:10:21 INFO  root;21 - Successfully logged user joey in.
+2018-03-08 10:10:21 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:12:39 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-08 10:12:39 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:12:48 DEBUG root;25 - serialize() method called
+2018-03-08 10:12:50 DEBUG root;25 - serialize() method called
+2018-03-08 10:13:10 INFO  root;21 - Successfully logged user David in.
+2018-03-08 10:13:10 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:13:19 DEBUG root;25 - serialize() method called
+2018-03-08 10:13:25 DEBUG root;25 - serialize() method called
+2018-03-08 10:13:28 DEBUG root;25 - serialize() method called
+2018-03-08 10:13:48 INFO  root;21 - Successfully logged user sue in.
+2018-03-08 10:13:48 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:13:55 DEBUG root;25 - serialize() method called
+2018-03-08 10:43:42 INFO  root;21 - Successfully registered David
+2018-03-08 10:43:49 INFO  root;21 - Successfully logged user David in.
+2018-03-08 10:43:49 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:43:49 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 10:44:01 DEBUG root;25 - serialize() method called
+2018-03-08 10:44:07 DEBUG root;25 - serialize() method called
+2018-03-08 10:44:22 INFO  root;21 - Successfully logged user David in.
+2018-03-08 10:44:22 DEBUG root;25 - deSerialize() method called
+2018-03-08 10:44:31 DEBUG root;25 - serialize() method called
+2018-03-08 10:51:34 WARN  root;17 - Failed login attempt for username: j
+2018-03-08 11:23:16 INFO  root;21 - Successfully logged user David in.
+2018-03-08 11:23:16 DEBUG root;25 - deSerialize() method called
+2018-03-08 11:23:17 DEBUG root;25 - serialize() method called
+2018-03-08 11:51:36 INFO  root;21 - Successfully registered joe
+2018-03-08 11:51:45 INFO  root;21 - Successfully logged user joe in.
+2018-03-08 11:51:45 DEBUG root;25 - deSerialize() method called
+2018-03-08 11:51:45 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 11:51:54 DEBUG root;25 - serialize() method called
+2018-03-08 11:52:06 INFO  root;21 - Successfully logged user David in.
+2018-03-08 11:52:06 DEBUG root;25 - deSerialize() method called
+2018-03-08 11:52:11 DEBUG root;25 - serialize() method called
+2018-03-08 11:52:13 DEBUG root;25 - serialize() method called
+2018-03-08 11:52:26 WARN  root;17 - Failed login attempt for username: jkljad
+2018-03-08 11:52:40 INFO  root;21 - Successfully registered Charlie
+2018-03-08 11:52:47 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-08 11:52:47 DEBUG root;25 - deSerialize() method called
+2018-03-08 11:52:47 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 11:53:00 DEBUG root;25 - serialize() method called
+2018-03-08 11:53:03 DEBUG root;25 - serialize() method called
+2018-03-08 11:53:10 WARN  root;17 - Failed login attempt for username: sue
+2018-03-08 11:53:19 INFO  root;21 - Successfully registered bob
+2018-03-08 11:53:24 INFO  root;21 - Successfully logged user bob in.
+2018-03-08 11:53:24 DEBUG root;25 - deSerialize() method called
+2018-03-08 11:53:24 ERROR root;13 - IndexOutOfBoundsException caught in Credentials
+2018-03-08 11:53:25 DEBUG root;25 - serialize() method called
+2018-03-08 11:53:30 WARN  root;17 - Failed login attempt for username: sue
+2018-03-08 11:53:37 WARN  root;17 - Failed login attempt for username: sue
+2018-03-08 11:53:52 INFO  root;21 - Successfully logged user David in.
+2018-03-08 11:53:52 DEBUG root;25 - deSerialize() method called
+2018-03-08 11:54:06 DEBUG root;25 - serialize() method called
+2018-03-08 11:54:15 INFO  root;21 - Successfully logged user David in.
+2018-03-08 11:54:15 DEBUG root;25 - deSerialize() method called
+2018-03-08 11:54:23 DEBUG root;25 - serialize() method called
+2018-03-08 11:54:27 DEBUG root;25 - serialize() method called
+2018-03-08 11:54:27 INFO  root;21 - Deposited $500.0 into user acount bob
+2018-03-08 11:54:38 DEBUG root;25 - serialize() method called
+2018-03-08 11:54:52 DEBUG root;25 - serialize() method called
+2018-03-08 11:54:52 INFO  root;21 - User bob transfered $250.0 into user acount 2
+2018-03-08 11:54:56 DEBUG root;25 - serialize() method called
+2018-03-08 11:55:06 DEBUG root;25 - serialize() method called
+2018-03-09 11:04:29 INFO  root;21 - Successfully logged user David in.
+2018-03-09 11:04:29 DEBUG root;25 - deSerialize() method called
+2018-03-09 11:04:37 DEBUG root;25 - serialize() method called
