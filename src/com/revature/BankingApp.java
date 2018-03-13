@@ -15,7 +15,7 @@ public class BankingApp {
 		Credentials creds = new Credentials();
 		Scanner reader = new Scanner(System.in);
 		do {
-			System.out.println("Welcome to the Bank!\n");
+			System.out.println("Welcome to the First Bank of Charles Swimmington!\n");
 			System.out.println("Please register or enter your credentials");
 			System.out.println("\n1. Login\n2. Register");
 

@@ -10,6 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import com.revature.dao.BankDao;
+import com.revature.dao.BankDaoImpl;
+import com.revature.pojo.BankDB;
+
 public class BankAccount {
 	private static List<String> usernames = new ArrayList<>();
 	private static List<String> passwords = new ArrayList<>();
@@ -21,13 +25,21 @@ public class BankAccount {
 	private String validUsername, validPassword;
 	
 	private LoggingUtil log = new LoggingUtil();
+	private BankDB db = new BankDB();
+	private BankDao bd = new BankDaoImpl();
 	
 	public BankAccount(String username, String password){
-		deSerialize();
-		this.validUsername = username;
-		this.validPassword = password;
+	//	deSerialize();
+	//	this.validUsername = username;
+	//	this.validPassword = password;
 		
-		try {
+		db = bd.retrieveBankUserByUsername(username);
+		
+		if(db.getAccountNumber() == 0 && db.getIsEmployee() == 0 && db.getIsAdmin() == 0) 
+			firstTimeBankMenu();
+		else
+			bankMenu();
+		/*try {
 			for(int i = 0; i < this.usernames.size(); i++) {
 				if(usernames.get(i).equals(this.validUsername) && accountNumbers.get(i) == null) {
 					i = this.usernames.size();
@@ -41,7 +53,7 @@ public class BankAccount {
 			log.logError("IndexOutOfBoundsException caught in Credentials");
 			firstTimeBankMenu();
 		}
-		
+		*/
 	}
 	
 	public void firstTimeBankMenu() {
@@ -49,10 +61,10 @@ public class BankAccount {
 		String selection;
 		Scanner reader = new Scanner(System.in);
 		
-		System.out.println("\nWelcome " + this.validUsername + "!\n");
+		System.out.println("\nWelcome " + this.db.getUsername() + "!\n");
 		
 		do {
-			System.out.println("What would you like to do?\n");
+			System.out.println("\nWhat would you like to do?\n");
 			System.out.println("1. Open Account");
 			System.out.println("2. Employee Login");
 			System.out.println("3. Admin Login");
@@ -84,160 +96,133 @@ public class BankAccount {
 		String selection;
 		Scanner reader = new Scanner(System.in);
 		
-		for(int i = 0; i < this.usernames.size(); i++) {
-			if(usernames.get(i).equals(this.validUsername)) {
-				if(approved.get(i) == false) {
-					System.out.println("Account must be activated by a bank employee, please login later.");
-					i = this.usernames.size();
-				}
-				else {
-					do {
-						if(isEmployee.get(i) == true) {
-							System.out.println("What would you like to do?\n");
-							System.out.println("1. Approve Account");
-							System.out.println("2. List Accounts");
-							System.out.println("3. Open an Account");
-							System.out.println("4. Logout");
-							
-							selection = reader.next();
-							
-							switch(selection) {
-							case "1": approveAccount();
-							          selectionValid = 0;
-							          break;
-							case "2": listAccounts();
-							          selectionValid = 0;
-							          break;
-							case "3": employeeAccount();
-								      selectionValid = 0;
-								      break;
-							case "4": selectionValid = 1;
-					                  break;
-							default: System.out.println("invalid selection");
-							         selectionValid = 0;
-							}
-							
-						}
-						else if(isAdmin.get(i) == true) {
-							System.out.println("What would you like to do?\n");
-							System.out.println("1. Approve Acount");
-							System.out.println("2. List Acounts");
-							System.out.println("3. Open an Acount");
-							System.out.println("4. Withdraw from an Acount");
-							System.out.println("5. Deposit into an Acount");
-							System.out.println("6. Transfer between Acounts");
-							System.out.println("7. Cancel Acount");
-							System.out.println("8. Logout");
-							
-							selection = reader.next();
-							
-							switch(selection) {
-							case "1": approveAccount();
-							          selectionValid = 0;
-							          break;
-							case "2": listAccounts();
-							          selectionValid = 0;
-							          break;
-							case "3": employeeAccount();
-								      selectionValid = 0;
-								      break;
-							case "4": System.out.print("Enter username of Acount: ");
-									  withdraw(reader.next());
-									  selectionValid = 0;
-					                  break;
-							case "5": System.out.print("Enter username of Acount: ");
-									  deposit(reader.next());
-							          selectionValid = 0;
-			                          break;
-							case "6": System.out.print("Enter username of Acount: ");
-							  		  transfer(reader.next());
-							  		  selectionValid = 0;
-							  		  break;
-							case "7": System.out.print("Enter username of Acount: ");
-									  cancelAcount(reader.next());
-									  selectionValid = 0;
-									  break;
-							case "8": selectionValid = 1;
-							  		  break;
-							default: System.out.println("invalid selection");
-							         selectionValid = 0;
-							}
-							
-						}
-						else {
-							System.out.println("What would you like to do?\n");
-							System.out.println("1. Deposit into Account");
-							System.out.println("2. Withdraw from Account");
-							System.out.println("3. Transfer funds between accounts");
-							System.out.println("4. View balance");
-							System.out.println("5. Open another account");
-							System.out.println("6. Logout");
-							
-							selection = reader.next();
-							
-							switch(selection) {
-							case "1": deposit(this.validUsername);
-							          selectionValid = 0;
-							          break;
-							case "2": withdraw(this.validUsername);
-							          selectionValid = 0;
-							          break;
-							case "3": transfer(this.validUsername);
-								      selectionValid = 0;
-								      break;
-							case "4": returnAmount(this.validUsername);
-									  selectionValid = 0;
-									  break;
-							case "5": openAnotherAccount();
-								      selectionValid = 0;
-					                  break;
-							case "6": selectionValid = 1;
-									  break;
-							default: System.out.println("invalid selection");
-							         selectionValid = 0;
-							}
-						}
-					}while(selectionValid == 0);
-				}
+			if(db.getApproved() == 0) {
+				System.out.println("Account must be activated by a bank employee, please login later.");
 			}
-		}
+			else {
+				do {
+					if(db.getIsEmployee() == 1) {
+						System.out.println("\nWhat would you like to do?\n");
+						System.out.println("1. Approve Account");
+						System.out.println("2. List Accounts");
+						System.out.println("3. Open an Account");
+						System.out.println("4. Logout");
+							
+						selection = reader.next();
+							
+						switch(selection) {
+						case "1": approveAccount();
+						          selectionValid = 0;
+						          break;
+						case "2": listAccounts();
+						          selectionValid = 0;
+							      break;
+						case "3": employeeAccount();
+							      selectionValid = 0;
+							      break;
+						case "4": selectionValid = 1;
+				                  break;
+						default: System.out.println("invalid selection");
+						         selectionValid = 0;
+					    }
+							
+					}
+					else if(db.getIsAdmin() == 1) {
+						System.out.println("\nWhat would you like to do?\n");
+						System.out.println("1. Approve Acount");
+						System.out.println("2. List Acounts");
+						System.out.println("3. Open an Acount");
+						System.out.println("4. Withdraw from an Acount");
+						System.out.println("5. Deposit into an Acount");
+						System.out.println("6. Transfer between Acounts");
+						System.out.println("7. Cancel Acount");
+						System.out.println("8. Logout");
+							
+						selection = reader.next();
+							
+						switch(selection) {
+						case "1": approveAccount();
+						          selectionValid = 0;
+						          break;
+						case "2": listAccounts();
+						          selectionValid = 0;
+						          break;
+						case "3": employeeAccount();
+							      selectionValid = 0;
+							      break;
+						case "4": System.out.print("Enter username of Acount: ");
+								  withdraw(reader.next());
+								  selectionValid = 0;
+				                  break;
+						case "5": System.out.print("Enter username of Acount: ");
+								  deposit(reader.next());
+						          selectionValid = 0;
+		                          break;
+						case "6": System.out.print("Enter username of Acount: ");
+						  		  transfer(reader.next());
+						  		  selectionValid = 0;
+						  		  break;
+						case "7": System.out.print("Enter username of Acount: ");
+								  cancelAcount(reader.next());
+								  selectionValid = 0;
+								  break;
+						case "8": selectionValid = 1;
+						  		  break;
+						default: System.out.println("invalid selection");
+						         selectionValid = 0;
+						}
+							
+					}
+					else {
+						System.out.println("\nWhat would you like to do?\n");
+						System.out.println("1. Deposit into Account");
+						System.out.println("2. Withdraw from Account");
+						System.out.println("3. Transfer funds between accounts");
+						System.out.println("4. View balance");
+						System.out.println("5. Open another account");
+						System.out.println("6. Logout");
+							
+						selection = reader.next();
+							
+						switch(selection) {
+						case "1": deposit(db.getUsername());
+						          selectionValid = 0;
+						          break;
+						case "2": withdraw(db.getUsername());
+						          selectionValid = 0;
+						          break;
+						case "3": transfer(db.getUsername());
+							      selectionValid = 0;
+							      break;
+						case "4": returnAmount(db.getUsername());
+								  selectionValid = 0;
+								  break;
+						case "5": openAnotherAccount();
+							      selectionValid = 0;
+				                  break;
+						case "6": selectionValid = 1;
+								  break;
+						default: System.out.println("invalid selection");
+						         selectionValid = 0;
+						}
+					}
+				}while(selectionValid == 0);
+		}			
 	}
 	
 	public void openAccount() {
-		for(int i = 0; i < this.usernames.size(); i++) {
-			if(usernames.get(i).equals(this.validUsername)) {
-				if(i - 1 != -1)
-					accountNumbers.add(accountNumbers.get(i - 1) + 1);
-				else
-					accountNumbers.add(1);
-				isEmployee.add(false);
-				isAdmin.add(false);
-				balance.add(0.00);
-				approved.add(false);
-				i = this.usernames.size();
-			}
-		}
-		
+		db.setAccountNumber(db.getId());
+		bd.updateBankDB(db);
+		db = bd.retrieveBankUserById(db.getId());
 		System.out.println("Application submitted for account creation!\n");
 		System.out.println("Account must be activated by a bank employee, please login later.");
-		serializeDB();
 	}
 	
 	public void openAnotherAccount() {
-		for(int i = 0; i < this.usernames.size(); i++) {
-			if(usernames.get(i).equals(this.validUsername)) {
-				if(i - 1 != -1)
-					accountNumbers.add(accountNumbers.get(i - 1) + 1);
-				isEmployee.add(false);
-				isAdmin.add(false);
-				balance.add(0.00);
-				approved.add(false);
-				i = this.usernames.size();
-			}
-		}
-		
-		System.out.println("Application submitted for account creation!\n");
-		
+		db.setAccountNumber(db.getId());
+		bd.updateBankDB(db);
+		db = bd.retrieveBankUserById(db.getId());
+		System.out.println("Application submitted for account creation!\n");	
 	}
 	
 	public void employeeLogin() {
@@ -252,17 +237,11 @@ public class BankAccount {
 			if(input.equals("employee")) {
 				System.out.println("Account sucessfully activated! Welcome to the team!\n");
 				
-				for(int i = 0; i < this.usernames.size(); i++) {
-					if(usernames.get(i).equals(this.validUsername)) {
-						accountNumbers.add(0);
-						isEmployee.add(true);
-						isAdmin.add(false);
-						balance.add(0.00);
-						approved.add(true);
-						i = this.usernames.size();
-				        bankMenu();
-					}
-				}
+				db.setIsEmployee(1);
+				db.setApproved(1);
+				bd.updateBankDB(db);
+				db = bd.retrieveBankUserById(db.getId());
+		        bankMenu();
 			}
 			else {
 				System.out.println("Password incorrect");
@@ -274,7 +253,6 @@ public class BankAccount {
 				input = "employee";
 			}
 		}while(!input.equals("employee"));
-		serializeDB();	
 	}
 	
 	public void adminLogin() {
@@ -289,17 +267,11 @@ public class BankAccount {
 			if(input.equals("admin")) {
 				System.out.println("Account sucessfully activated!\n");
 				
-				for(int i = 0; i < this.usernames.size(); i++) {
-					if(usernames.get(i).equals(this.validUsername)) {
-						accountNumbers.add(0);
-						isEmployee.add(false);
-						isAdmin.add(true);
-						balance.add(0.00);
-						approved.add(true);
-						i = this.usernames.size();
-				        bankMenu();
-					}
-				}
+				db.setIsAdmin(1);
+				db.setApproved(1);
+				bd.updateBankDB(db);
+				db = bd.retrieveBankUserById(db.getId());
+		        bankMenu();
 			}
 			else {
 				System.out.println("Password incorrect");
@@ -311,65 +283,63 @@ public class BankAccount {
 				input = "admin";
 			}
 		}while(!input.equals("admin"));
-        serializeDB();
 	}
 	
 	public void deposit(String s) {
 		Scanner reader = new Scanner(System.in);
 		double amount;
+		String temp = db.getUsername();
 		
+		db = bd.retrieveBankUserByUsername(s);
 		returnAmount(s);
 		System.out.print("\nEnter amount to deposit: ");
 		amount = reader.nextDouble();
 		
 		if(amount > 0) {
-			for(int i = 0; i < usernames.size(); i++) {
-				if(usernames.get(i).equals(s)) {
-					balance.set(i, amount + balance.get(i));
-					System.out.println("Balance set to $" + balance.get(i) + "\n");
-					i = usernames.size();
-				}
-			}
+			db.setBalance(db.getBalance() + amount);
+			System.out.println("Balance set to $" + db.getBalance() + "\n");
 		}
 		else {
 			System.out.println("Invalid input. Amount must be greater than zero.\n");
 		}
-		serializeDB();
 		log.logInfo("Deposited $" + amount + " into user acount " + s);
+		bd.updateBankDB(db);
+		db = bd.retrieveBankUserByUsername(temp);
 	}
 	
 	public void withdraw(String s) {
 		Scanner reader = new Scanner(System.in);
 		double amount;
+		String temp = db.getUsername();
 		
+		db = bd.retrieveBankUserByUsername(s);
 		returnAmount(s);
 		System.out.print("\nEnter amount to withdraw: ");
 		amount = reader.nextDouble();
 		
 		if(amount > 0) {
-			for(int i = 0; i < usernames.size(); i++) {
-				if(usernames.get(i).equals(s) && balance.get(i) - amount >= 0) {
-					balance.set(i, balance.get(i) - amount);
-					System.out.println("Balance set to $" + balance.get(i) + "\n");
-					i = usernames.size();
-				}
-				else if(usernames.get(i).equals(s)) {
-					System.out.println("Error: You don't have the necessary funds to withdraw that amount.\n");
-					i = usernames.size();
-				}
+			if(db.getBalance() - amount >= 0) {
+				db.setBalance(db.getBalance() - amount);
+				System.out.println("Balance set to $" + db.getBalance() + "\n");
 			}
+			else
+				System.out.println("Error: You don't have the necessary funds to withdraw that amount.\n");
 		}
 		else {
 			System.out.println("Invalid input. Amount must be greater than zero.\n");
 		}
-		serializeDB();
 		log.logInfo("Withdrew $" + amount + " from user acount " + s);
+		bd.updateBankDB(db);
+		db = bd.retrieveBankUserByUsername(temp);
 	}
 	
 	public void transfer(String s) {
 		Scanner reader = new Scanner(System.in);
 		double amount;
 		int accountNum;
+		String temp = db.getUsername();
+		
+		db = bd.retrieveBankUserByUsername(s);
 		returnAmount(s);
 		System.out.print("\nEnter account number to transfer to: ");
 		accountNum = reader.nextInt();
@@ -377,91 +347,83 @@ public class BankAccount {
 		amount = reader.nextDouble();
 		
 		if(amount > 0) {
-			for(int i = 0; i < usernames.size(); i++) {
-				if(usernames.get(i).equals(s) && balance.get(i) - amount >= 0) {
-					balance.set(i, balance.get(i) - amount);
-					System.out.println("Transfered $" + amount + " to account " + accountNum + ". Your balance remaining is: " + balance.get(i) + "\n");
-					i = usernames.size();
-				}
-				else if(usernames.get(i).equals(s)) {
-					System.out.println("Error: You don't have the necessary funds to withdraw that amount.\n");
-					i = usernames.size();
-				}
+			if(db.getBalance() - amount >= 0) {
+				db.setBalance(db.getBalance() - amount);
+				System.out.println("Transfered $" + amount + " to account " + accountNum + ". Your balance remaining is: " + db.getBalance() + "\n");
+				bd.updateBankDB(db);
+				db = bd.retrieveBankUserById(accountNum);
+				db.setBalance(db.getBalance() + amount);
 			}
-			
-			for(int i = 0; i < accountNumbers.size(); i++) {
-				if(accountNumbers.get(i) == accountNum && balance.get(i) - amount >= 0) {
-					balance.set(i, balance.get(i) + amount);
-					i = usernames.size();
-				}
-			}
+			else
+				System.out.println("Error: You don't have the necessary funds to withdraw that amount.\n");
 		}
 		else {
 			System.out.println("Invalid input. Amount must be greater than zero.\n");
 		}
-		serializeDB();
 		log.logInfo("User " + s + " transfered $" + amount + " into user acount " + accountNum);
+		bd.updateBankDB(db);
+		db = bd.retrieveBankUserByUsername(temp);
 	}
 	
 	public void returnAmount(String s) {
-		for(int i = 0; i < usernames.size(); i++) {
-			if(usernames.get(i).equals(s)) {
-				System.out.println("Current balance: $" + balance.get(i) + "\n");
-				i = usernames.size();
-			}
-		}
-		serializeDB();
+		System.out.println("Current balance: $" + db.getBalance() + "\n");
 	}
 	
 	public void approveAccount() {
 		Scanner reader = new Scanner(System.in);
 		int input, accountsLeft = 0;
+		List<BankDB> dbs = new ArrayList<>();
+		dbs = bd.retrieveAllBankAccounts();
+		String temp = db.getUsername();
 		
-		for(int i = 0; i < accountNumbers.size(); i++) {
-			if(approved.get(i) == false)
+		for(int i = 0; i < dbs.size(); i++) {
+			if(dbs.get(i).getApproved() == 0)
 				accountsLeft++;
 		}
 		
 		if(accountsLeft > 0) {
 			System.out.println("Select an account to approve: ");
-			for(int i = 0; i < accountNumbers.size(); i++) {
-				if(approved.get(i) == false) {
-					System.out.println(i + ". " + accountNumbers.get(i));
+			for(int i = 0; i < dbs.size(); i++) {
+				if(dbs.get(i).getApproved() == 0) {
+					System.out.println(i + ". " + dbs.get(i).getAccountNumber());
 				}
 			}
 			input = reader.nextInt();
 			
-			for(int i = 0; i < accountNumbers.size(); i++) {
+			for(int i = 0; i < dbs.size(); i++) {
 				if(i == input) {
-					approved.set(i, true);
-					System.out.println("Approved account number " + accountNumbers.get(i));
-					i = accountNumbers.size();
+					db = bd.retrieveBankUserById(dbs.get(i).getId());
+					db.setApproved(1);
+					System.out.println("Approved account number " + db.getAccountNumber());
+					i = dbs.size();
 				}
 			}
+			bd.updateBankDB(db);
+			db = bd.retrieveBankUserByUsername(temp);
 		}
 		else
 			System.out.println("No accounts to approve.\n");
-		
-		serializeDB();
 	}
 	
 	public void listAccounts() {
-		for(int i = 0; i < usernames.size(); i++) {
-			System.out.println("Username: " + usernames.get(i) + " Account Number: " + accountNumbers.get(i) + " Balance: $" + balance.get(i));
+		List<BankDB> dbs = new ArrayList<>();
+		dbs = bd.retrieveAllBankAccounts();
+		
+		for(int i = 0; i < dbs.size(); i++) {
+			System.out.println("Username: " + dbs.get(i).getUsername() + " Account Number: " + dbs.get(i).getAccountNumber() + " Balance: $" + dbs.get(i).getBalance());
 		}
-		serializeDB();
 	}
 	
 	public void cancelAcount(String s) {
-		for(int i = 0; i < accountNumbers.size(); i++) {
-			if(usernames.get(i).equals(s)) {
-				approved.set(i, false);
-				i = accountNumbers.size();
-			}
-		}
+		String temp = db.getUsername();
+		
+		db = bd.retrieveBankUserByUsername(s);	
+		db.setApproved(0);
 		
 		System.out.println("Canceled acount \"" + s + "\".\n");
-		serializeDB();
+		
+		bd.updateBankDB(db);
+		db = bd.retrieveBankUserByUsername(temp);
 	}
 	
 	public void employeeAccount() {

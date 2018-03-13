@@ -469,3 +469,67 @@
 2018-03-09 11:04:29 INFO  root;21 - Successfully logged user David in.
 2018-03-09 11:04:29 DEBUG root;25 - deSerialize() method called
 2018-03-09 11:04:37 DEBUG root;25 - serialize() method called
+2018-03-12 23:06:45 INFO  root;21 - Successfully registered David
+2018-03-12 23:33:52 WARN  root;17 - Failed login attempt for username: David
+2018-03-12 23:43:02 INFO  root;21 - Successfully logged user David in.
+2018-03-12 23:47:32 INFO  root;21 - Successfully logged user David in.
+2018-03-12 23:51:24 INFO  root;21 - Successfully logged user David in.
+2018-03-12 23:53:07 INFO  root;21 - Successfully logged user David in.
+2018-03-12 23:54:14 INFO  root;21 - Successfully logged user David in.
+2018-03-13 01:56:55 INFO  root;21 - Successfully logged user David in.
+2018-03-13 02:00:55 INFO  root;21 - Successfully logged user David in.
+2018-03-13 02:03:35 WARN  root;17 - Failed login attempt for username: joe
+2018-03-13 02:04:00 INFO  root;21 - Successfully registered Joe
+2018-03-13 02:04:07 WARN  root;17 - Failed login attempt for username: joe
+2018-03-13 02:05:31 INFO  root;21 - Successfully logged user Joe in.
+2018-03-13 02:05:46 INFO  root;21 - Successfully logged user Joe in.
+2018-03-13 02:05:52 ERROR root;13 - NullPointerException Caught in Credentials
+2018-03-13 02:05:52 WARN  root;17 - Failed login attempt for username: joe
+2018-03-13 02:06:04 INFO  root;21 - Successfully registered Charlie
+2018-03-13 02:06:10 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-13 02:07:12 INFO  root;21 - Successfully logged user Joe in.
+2018-03-13 02:07:22 INFO  root;21 - Deposited $500.0 into user acount Joe
+2018-03-13 02:07:35 INFO  root;21 - Withdrew $200.0 from user acount Joe
+2018-03-13 02:08:01 INFO  root;21 - Successfully registered sue
+2018-03-13 02:08:06 INFO  root;21 - Successfully logged user sue in.
+2018-03-13 02:08:18 INFO  root;21 - Successfully registered mark
+2018-03-13 02:08:23 INFO  root;21 - Successfully logged user mark in.
+2018-03-13 02:09:42 ERROR root;13 - NullPointerException Caught in Credentials
+2018-03-13 02:09:42 WARN  root;17 - Failed login attempt for username: mark
+2018-03-13 02:11:17 ERROR root;13 - NullPointerException Caught in Credentials
+2018-03-13 02:11:17 WARN  root;17 - Failed login attempt for username: mark
+2018-03-13 02:11:39 ERROR root;13 - NullPointerException Caught in Credentials
+2018-03-13 02:11:39 WARN  root;17 - Failed login attempt for username: mark
+2018-03-13 02:13:49 INFO  root;21 - Successfully logged user mark in.
+2018-03-13 02:14:01 INFO  root;21 - Successfully logged user David in.
+2018-03-13 02:15:00 DEBUG root;25 - serialize() method called
+2018-03-13 02:15:00 INFO  root;21 - User joe transfered $150.0 into user acount 23
+2018-03-13 02:15:35 DEBUG root;25 - serialize() method called
+2018-03-13 02:15:35 INFO  root;21 - User Joe transfered $150.0 into user acount 23
+2018-03-13 02:16:04 INFO  root;21 - Withdrew $150.0 from user acount Joe
+2018-03-13 02:19:26 INFO  root;21 - Successfully logged user mark in.
+2018-03-13 02:19:37 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-13 02:20:03 INFO  root;21 - Successfully logged user David in.
+2018-03-13 02:20:26 INFO  root;21 - Deposited $850.0 into user acount Joe
+2018-03-13 02:20:54 INFO  root;21 - User Joe transfered $500.0 into user acount 24
+2018-03-13 08:50:31 ERROR root;13 - NullPointerException Caught in Credentials
+2018-03-13 08:50:31 WARN  root;17 - Failed login attempt for username: David
+2018-03-13 09:50:25 INFO  root;21 - Successfully registered Joseph
+2018-03-13 09:50:49 INFO  root;21 - Successfully logged user Joseph in.
+2018-03-13 09:51:37 INFO  root;21 - Successfully registered Charlie
+2018-03-13 09:51:56 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-13 09:52:33 INFO  root;21 - Successfully logged user Joseph in.
+2018-03-13 09:54:27 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-13 09:54:56 INFO  root;21 - Deposited $500.0 into user acount Joseph
+2018-03-13 09:57:02 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-13 09:58:24 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-13 10:00:00 ERROR root;13 - NullPointerException Caught in Credentials
+2018-03-13 10:00:00 WARN  root;17 - Failed login attempt for username: Charlie
+2018-03-13 10:00:16 INFO  root;21 - Successfully registered Charlie
+2018-03-13 10:00:26 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-13 11:43:28 INFO  root;21 - Successfully registered Joseph
+2018-03-13 11:43:38 INFO  root;21 - Successfully logged user Joseph in.
+2018-03-13 11:44:04 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-13 11:44:40 INFO  root;21 - Successfully logged user Joseph in.
+2018-03-13 11:45:13 INFO  root;21 - Successfully logged user Charlie in.
+2018-03-13 11:45:28 INFO  root;21 - Deposited $500.0 into user acount Joseph

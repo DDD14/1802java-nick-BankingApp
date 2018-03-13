@@ -3,6 +3,10 @@ package com.revature;
 import static org.junit.jupiter.api.Assumptions.assumingThat;
 import java.util.Scanner;
 
+import com.revature.dao.BankDao;
+import com.revature.dao.BankDaoImpl;
+import com.revature.pojo.BankDB;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -53,6 +57,8 @@ public class Credentials {
 	
 	public void register() {
 		Scanner reader = new Scanner(System.in);
+		BankDB db = new BankDB();
+		BankDao bd = new BankDaoImpl();
 		int validInput;
 		String u, p;
 		
@@ -74,6 +80,11 @@ public class Credentials {
 		System.out.print("Password: ");
 		p = reader.nextLine();
 		
+		db.setUsername(u);
+		db.setPassword(p);
+		
+		bd.createBankUserPreparedStmt(db);
+		/*
 		this.usernames.add(u);
 		this.passwords.add(p);
 		
@@ -99,7 +110,7 @@ public class Credentials {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 		
 		System.out.println("\nSuccessfully Registered!\n");
 		log.logInfo("Successfully registered " + u);
@@ -110,6 +121,8 @@ public class Credentials {
 		int validLogin = 0;
 		Scanner reader = new Scanner(System.in);
 		BankAccount account;
+		BankDB db = new BankDB();
+		BankDao bd = new BankDaoImpl();
 
 		System.out.print("Username: ");
 		u = reader.nextLine();
@@ -117,13 +130,16 @@ public class Credentials {
 		System.out.print("Password: ");
 		p = reader.nextLine();
 		
-		for(int i = 0; i < this.usernames.size(); i++) {
-			if(usernames.get(i).equals(u) && passwords.get(i).equals(p)) {
+		try {
+			if(bd.verifyUsername(u).equals(u) && bd.verifyPassword(p).equals(p)) {
 				validLogin = 1;
-				i = usernames.size();
 				log.logInfo("Successfully logged user " + u + " in.");
 				account = new BankAccount(u,p);
 			}
+		}
+		catch(NullPointerException e) {
+			log.logError("NullPointerException Caught in Credentials");
+			validLogin = 0;
 		}
 		
 		if(validLogin != 1) {
